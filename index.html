@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYPTO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+    <section id="landing">
+        <nav>
+            <h1 class="logo">krypBiT</h1>
+            <input type="checkbox" id="click">
+            <label for="click" class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            
+            <ul class="nav__links">
+                <li class="nav__link"><a href="#">about</a></li>
+                <li class="nav__link"><a href="#charts">chart</a></li>
+                <li class="nav__link"><a href="#news">news</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="header__container">
+                <div class="about__description--wrapper">
+                    <h1 class="about__title">
+                        Track Bitcoin<br>Prices And <br>News
+                    </h1>
+                    <p class="about__sub-title">
+                        The most reliable Bitcoin data often cited by top
+                        industry publishers.
+                    </p>
+                    <div class="about__btn--wrapper">
+                        <button class="btn" id="btn__charts">
+                            <a href="#charts">BITCOIN CHART</a>
+                        </button>
+                        <button class="btn" id="btn__news">
+                            <a href="#news">BITCOIN NEWS</a>
+                        </button>
+                    </div>
+                </div>
+                <figure class="about__img--wrapper">
+                    <img class="about__img" src="./assets/about_img.svg" alt="">
+                </figure>
+            </div>
+            <div class="featured__container">
+                <p class="featured__title">FEATURED ON</p>
+                <div class="featured__brands">
+                    <img class="brands" src="./assets/forbes.webp" alt="">
+                    <img class="brands" src="./assets/ibt.webp" alt="">
+                    <img class="brands" src="./assets/cnbc.webp" alt="">
+                    <img class="brands" src="./assets/btc.webp" alt="">
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="charts">
+        <div class="container">
+            <div class="section__header">
+                <h1 class="section__title">Bitcoin Chart</h1>
+                <p class="section__sub-title">Look first / Then leap.</p>
+            </div>
+            <div class="charting__containers--wrapper">
+                <div class="chart__container">
+                    <div class="coin__description">
+                        <h1 id="coin__name">BTC/USDT</h1>
+                        <p id="coin__price">67,162.01</p>
+                    </div>
+                    <div id="chart"></div>
+                </div>
+                <div class="about__chart--container">
+                    <div class="details">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" class="btc__logo" alt="">
+                        <p class="btc__name">Bitcoin</p>
+                    </div>
+                    <div class="price__section">
+                        <p id="price__btc"></p>
+                    </div>
+                    <div class="user__reaction--container">
+                        <p class="reaction__header">What do you think of Bitcoin?</p>
+                        <p class="header--sub">Help the markets know your sentiment!</p>
+                        <div class="reaction__wrapper">
+                            <div class="bullish reactions">
+                                <a href="" id="bullish" onclick="return false;">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span id="bullish__reacts">15 Likes</span>
+                                </a>
+                            </div>
+                            <div class="bearish reactions">
+                                <a href="" id="bearish" onclick="return false;">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span id="bearish__reacts">13 Dislikes</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <div class="section__header">
+                <h1 class="section__title">Bitcoin News</h1>
+                <p class="section__sub-title">Don't miss a story with global Bitcoin updates.</p>
+            </div>
+            <div id="newsContainer"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="row row__column">
+            <div class="footer__logo">
+                <h1 class="footer__logo--img">krypBiT</h1>
+            </div>
+        </div>
+        <div class="footer__list">
+            <a href="#" class="footer__link">about</a>
+            <a href="#charts" class="footer__link no__cursor">chart</a>
+            <a href="#news" class="footer__link">news</a>
+        </div>
+        <div class="footer__copyright">
+            Copyright &copy; 2024 krypBiT
+        </div>
+    </div>
+</footer>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
